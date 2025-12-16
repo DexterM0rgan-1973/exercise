@@ -9,7 +9,7 @@ def nMag(num1,num2):
 #se è pari o dispari
     
 def nPD (num1):
-    if num1%2==0
+    if num1%2==0:
         print("il numero è pari")
     else:
         print("il numero è dispari")
@@ -22,4 +22,17 @@ due=int(due)
 ris=nMag(uno,due)
 print(ris)
 nPD(ris)
+
+
+
+#scrivere un programma che dati due  interi stampi a video se il maggiore
+#è pari o dispari
+
+
+
+
+
+
+
+
 
