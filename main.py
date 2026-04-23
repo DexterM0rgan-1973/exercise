@@ -1,113 +1,183 @@
 from jarvis import *
-lunedi=[]
-martedi=[]
-mercoledi=[]
-giovedi=[]
-venerdi=[]
-sabato=[]
-domenica=[]
 
-riempiTemperature(lunedi)
-print("lunedi = "+str(lunedi))
-riempiTemperature(martedi)
-print("martedi = "+str(martedi))
-riempiTemperature(mercoledi)
-print("mercoledi = "+str(mercoledi))
-riempiTemperature(giovedi)
-print("giovedi = "+str(giovedi))
-riempiTemperature(venerdi)
-print("venerdi = "+str(venerdi))
-riempiTemperature(sabato)
-print("sabato = "+str(sabato))
-riempiTemperature(domenica)
-print("domenica = "+str(domenica))
-media_temperature=[]
-media1=media(lunedi)
-print("la media di lunedi è "+str(media1))
-media_temperature.append(media1)
-media2=media(martedi)
-print("la media di martedi è "+str(media2))
-media_temperature.append(media2)
-media3=media(mercoledi)
-print("la media di mercoledi è "+str(media3))
-media_temperature.append(media3)
-media4=media(giovedi)
-print("la media di giovedi è "+str(media4))
-media_temperature.append(media4)
-media5=media(venerdi)
-print("la media di venerdi è "+str(media5))
-media_temperature.append(media5)
-media6=media(sabato)
-print("la media di sabato è "+str(media6))
-media_temperature.append(media6)
-media7=media(domenica)
-print("la media di domenica è "+str(media7))
-media_temperature.append(media7)
-print(media_temperature)
 
-varianza1=varianza(lunedi,media1)
-print("la varianza di lunedi è "+str(varianza1))
-varianza2=varianza(martedi,media2)
-print("la varianza di martedi è "+str(varianza2))
-varianza3=varianza(mercoledi,media3)
-print("la varianza di mercoledi è "+str(varianza3))
-varianza4=varianza(giovedi,media4)
-print("la varianza di giovedi è "+str(varianza4))
-varianza5=varianza(venerdi,media5)
-print("la varianza di venerdi è "+str(varianza5))
-varianza6=varianza(sabato,media6)
-print("la varianza di sabato è "+str(varianza6))
-varianza7=varianza(domenica,media7)
-print("la varianza di domenica è "+str(varianza7))
+lunedì=giorni()
 
-deviazione_s1=deviazione_standard(varianza1)
-print("la deviazione standard di lunedi è " +str(deviazione_s1))
-deviazione_s2=deviazione_standard(varianza2)
-print("la deviazione standard di martedi è " +str(deviazione_s2))
-deviazione_s3=deviazione_standard(varianza3)
-print("la deviazione standard di mercoledi è " +str(deviazione_s3))
-deviazione_s4=deviazione_standard(varianza4)
-print("la deviazione standard di giovedi è " +str(deviazione_s4))
-deviazione_s5=deviazione_standard(varianza5)
-print("la deviazione standard di venerdi è " +str(deviazione_s5))
-deviazione_s6=deviazione_standard(varianza6)
-print("la deviazione standard di sabato è " +str(deviazione_s6))
-deviazione_s7=deviazione_standard(varianza7)
-print("la deviazione standard di domenica è " +str(deviazione_s7))
+print (lunedì)
 
-giornata_calda(media_temperature)
-giornata_fredda(media_temperature)
+martedì=giorni()
 
-errore_s1=errore_standard(deviazione_s1)
-print("l'errore standard di lunedi è "+str(errore_s1))
-errore_s2=errore_standard(deviazione_s2)
-print("l'errore standard di martedi è "+str(errore_s2))
-errore_s3=errore_standard(deviazione_s3)
-print("l'errore standard di mercoledi è "+str(errore_s3))
-errore_s4=errore_standard(deviazione_s4)
-print("l'errore standard di giovedi è "+str(errore_s4))
-errore_s5=errore_standard(deviazione_s5)
-print("l'errore standard di venerdi è "+str(errore_s5))
-errore_s6=errore_standard(deviazione_s6)
-print("l'errore standard di sabato è "+str(errore_s6))
-errore_s7=errore_standard(deviazione_s7)
-print("l'errore standard di domenica è "+str(errore_s7))
+print (martedì)
 
-moda1=moda(lunedi)
-print("la moda di lunedi è "+str(moda1))
-moda2=moda(martedi)
-print("la moda di martedi è "+str(moda2))
-moda3=moda(mercoledi)
-print("la moda di mercoledi è "+str(moda3))
-moda4=moda(giovedi)
-print("la moda di giovedi è "+str(moda4))
-moda5=moda(venerdi)
-print("la moda di venerdi è "+str(moda5))
-moda6=moda(sabato)
-print("la moda di sabato è "+str(moda6))
-moda7=moda(domenica)
-print("la moda di domenica è "+str(moda7))
-crea_istogramma(lunedi)
-print(crea_istogramma)
+mercoledì=giorni()
+
+print (mercoledì)
+
+giovedì=giorni()
+
+print (giovedì)
+
+venerdì=giorni()
+
+print (venerdì)
+
+sabato=giorni()
+
+print (sabato)
+
+domenica=giorni()
+
+print (domenica)
+
+media_lunedì=media(lunedì)
+
+print("la media del lunedì è ", media_lunedì)
+
+media_martedì=media(martedì)
+
+print("la media del martedì è ", media_martedì)
+
+media_mercoledì=media(mercoledì)
+
+print("la media del mercoledì è ", media_mercoledì)
+
+media_giovedì=media(giovedì)
+
+print("la media del giovedì è ", media_giovedì)
+
+media_venerdì=media(venerdì)
+
+print("la media del venerdì è ", media_venerdì)
+
+media_sabato=media(sabato)
+
+print("la media del sabato è ", media_sabato)
+
+media_domenica=media(domenica)
+
+print("la media del domenica è ", media_domenica)
+ 
+calda=giornata_calda(media_lunedì,media_martedì,media_mercoledì,media_giovedì,media_venerdì,media_sabato,media_domenica)
+
+print("la giornata più calda è", calda)
+ 
+fredda=giornata_fredda(media_lunedì,media_martedì,media_mercoledì,media_giovedì,media_venerdì,media_sabato,media_domenica)
+
+print("la giornata più fredda è", fredda)
+ 
+lun =varianza(media_lunedì,lunedì)
+
+print("la varianza del lunedi è",lun)
+
+mart=varianza(media_martedì,martedì)
+
+print("la varianza del martedi é",mart)
+
+merc=varianza(media_mercoledì,mercoledì)
+
+print("la varianza del mercoledi è ",merc)
+
+giov=varianza(media_giovedì,giovedì)
+
+print("la varianza del giovedi è ",giov)
+
+ven=varianza(media_venerdì,venerdì)
+
+print("la varianza del venerdi è ", ven)
+
+sab=varianza(media_sabato,sabato)
+
+print("la varianza del sabato è ",sab)
+
+dom=varianza(media_domenica,domenica)
+
+print("la varianza della domeinca é",dom)
+
+deviaz_lun= deviazione_standard(lun)
+
+print("deviazione_standard lunedì è", deviaz_lun)
+
+deviaz_mart= deviazione_standard(mart)
+
+print("deviazione_standard martedì è", deviaz_mart)
+
+deviaz_merc= deviazione_standard(merc)
+
+print("deviazione_standard mercoledì è", deviaz_merc)
+
+deviaz_giov= deviazione_standard(giov)
+
+print("deviazione_standard giovedì è", deviaz_giov)
+
+deviaz_ven= deviazione_standard(ven)
+
+print("deviazione_standard venerdì è", deviaz_ven)
+
+deviaz_sab= deviazione_standard(sab)
+
+print("deviazione_standard sabato è", deviaz_sab)
+
+deviaz_dom= deviazione_standard(dom)
+
+print("deviazione_standard domenica è", deviaz_dom)
+ 
+moda_lunedì=moda(lunedì)
+
+print("la moda del lunedi è ",moda_lunedì)
+
+moda_martedì=moda(martedì)
+
+print("la moda del martedi è ",moda_martedì)
+
+moda_mercoledì=moda(mercoledì)
+
+print("la moda del mercoledi è ",moda_mercoledì)
+
+moda_giovedì=moda(giovedì)
+
+print("la moda del giovedi è ",moda_giovedì)
+
+moda_venerdì=moda(venerdì)
+
+print("la moda del venrdi è ",moda_venerdì)
+
+moda_sabato=moda(sabato)
+
+print("la moda del sabato è ",moda_sabato)
+
+moda_domenica=moda(domenica)
+
+print("la moda della doomenica è ",moda_domenica)
+ 
+errore_lun=errore_standard(lun,lunedì)
+
+print("l'errore standard lunedi :",errore_lun)
+
+errore_mart=errore_standard(mart,martedì)
+
+print("l'errore standard martedi :",errore_mart)
+
+errore_merc=errore_standard(merc,mercoledì)
+
+print("l'errore standard mercoledi :",errore_merc)
+
+errore_giov=errore_standard(giov,giovedì)
+
+print("l'errore standard giovedi :",errore_giov)
+
+errore_ven=errore_standard(ven,venerdì)
+
+print("l'errore standard venrdi:",errore_ven)
+
+errore_sab=errore_standard(sab,sabato)
+
+print("l'errore standard sabato :",errore_sab)
+
+errore_dom=errore_standard(dom,domenica)
+
+print("l'errore standard domenica :",errore_dom)
+ 
+ 
+crea_istogramma(lunedì)
 
  
